@@ -6,25 +6,29 @@
     <title>Closar AI - Log In</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <body>
-        <div class="content">
-            <div class="login-container">
-                <div class="logo-section">
-                    <img src="images/logo.png" alt="The logo of the company, Closar AI" class="logo">
-                </div>
-                <div class="form-section">
-                    <h2>Welcome</h2>
-                    <form action="">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                        <button type="submit">Login</button>
-                    </form>
-                </div>
+    <div class="content">
+        <div class="login-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="The logo of the company, Closar AI" class="logo">
+            </div>
+            <div class="form-section">
+                <!-- Den synliga rubriken -->
+                <h2>Welcome</h2>
+                <!-- Den dolda texten för skärmläsare -->
+                <div aria-labelledby="login-heading" style="display:none;">Log in to your account</div>
+                <form action="">
+                    <label for="email">Email:</label>
+                    <input aria-label="enter your email" type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input aria-label="enter your password" type="password" id="password" name="password" required>
+                    <button aria-label="click to log in" type="submit">Login</button>
+                </form>
             </div>
         </div>
-    </body>
-    </html>
+    </div>
+</body>
+
+</html>
 </html>
