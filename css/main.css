@@ -82,6 +82,25 @@ button:hover {
     background-color: #333;
 }
 
+.additional-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.additional-links a {
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    color: #333;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.additional-links a:hover {
+    color: #666;
+}
+
 /* Media queries för responsivitet */
 @media only screen and (max-width: 768px) {
     .login-container {
