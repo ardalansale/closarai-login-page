@@ -11,3 +11,6 @@ Användare loggar in för att komma till sin dashboard. Observera att denna inlo
 
 ## Kontakt
 Kontakta mig på ardalansale@gmail.com om du har några frågor eller förslag.
+
+## Länk
+https://ardalansale.github.io/closarai-login-page/
