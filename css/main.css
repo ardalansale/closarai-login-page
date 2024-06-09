@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body, html {
     height: 100%;
     margin: 0;
@@ -5,14 +7,49 @@ body, html {
     font-size: 62.5%;
     font-family: 'Inter', helvetica, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 10px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-family: 'Inter';
+}
+
+/* Inlogg */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 60px;
 }
 
 .login-container {
@@ -66,7 +103,7 @@ input:hover {
 }
 
 button {
-    width: 98%; /* matchar fältens bredd */
+    width: 98%;
     padding: 10px;
     margin-top: 24px;
     background-color: #000;
@@ -105,6 +142,15 @@ button:hover {
 @media only screen and (max-width: 768px) {
     .login-container {
         width: 70%;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
     }
 }
 
